@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поспелов А.Д.</title>
+    <style>
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('font_1.otf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: 'CustomFont', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('texture.png') repeat, linear-gradient(135deg, #f4f7fb, #dbe3ec); background-size: 200px 200px, cover; linear-gradient(135deg, #f4f7fb, #dbe3ec);
+            color: #333;
+        }
+        .card, .review-card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #0056b3;
+        }
+        h1 {
+            margin: 10px 0;
+            font-size: 22px;
+            color: #0056b3;
+        }
+        p {
+            color: #555;
+            font-size: 16px;
+        }
+        .contact {
+            margin-top: 15px;
+            padding: 10px;
+            border: 2px solid #0056b3;
+            border-radius: 10px;
+            background-color: #e9f0fa;
+        }
+        .contact a {
+            display: block;
+            text-decoration: none;
+            color: #0056b3;
+            margin-top: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        .review-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .review-box {
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            background-color: #f4f7fb;
+            text-align: center;
+            width: 100%;
+        }
+        .review-box a {
+            display: block;
+        }
+        .review-box img {
+            width: 80%;
+            max-width: 210px;
+            height: auto;
+            cursor: pointer;
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 20px;
+            }
+            .avatar {
+                width: 130px;
+                height: 130px;
+            }
+            .contact a {
+                font-size: 14px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img class="avatar" src="avatar.jpg" alt="Фото профиля">
+        <h1>Поспелов Антон Дмитриевич</h1>
+        <p style="margin-bottom: 10px;">Врач ультразвуковой диагностики</p>
+        <p><strong>Актуальные места приёма:</strong></p>
+        <div class="contact" style="padding-top: 5px;">
+            <p><a href="https://2gis.ru/chelyabinsk/firm/70000001079903116?m=61.282008%2C55.193917%2F16" target="_blank">СМТ-клиника, г. Челябинск, ул. Бейвеля 14</a></p>
+            <a href="tel:+73517783594">📞 +7 (351) 778‒35‒94</a>
+        </div>
+    </div>
+    <div class="review-card">
+        <p style="font-size: 24px; margin-top: 5px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">⭐⭐⭐⭐⭐</p>
+        <p><strong>Здесь вы можете написать ваш отзыв:</strong></p>
+        <div class="review-links">
+            <div class="review-box">
+                <a href="https://prodoctorov.ru/chelyabinsk/vrach/1051341-pospelov/" target="_blank">
+                    <img src="prodoctorov-logo.svg" alt="Prodoctorov">
+                </a>
+            </div>
+            <div class="review-box">
+                <a href="https://doctu.ru/chelyabinsk/doctor/pospelov-anton-dmitrievich" target="_blank">
+                    <img src="doctu-logo.svg" alt="Doctu">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
