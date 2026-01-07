@@ -1,0 +1,113 @@
+/* Стили для CV карточки */
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('font_1.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'CustomFont', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('texture.png') repeat, linear-gradient(135deg, #f4f7fb, #dbe3ec);
+    background-size: 200px 200px, cover;
+    color: #333;
+}
+
+.card, .review-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0056b3;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 22px;
+    color: #0056b3;
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+}
+
+.contact {
+    margin-top: 15px;
+    padding: 10px;
+    border: 2px solid #0056b3;
+    border-radius: 10px;
+    background-color: #e9f0fa;
+}
+
+.contact a {
+    display: block;
+    text-decoration: none;
+    color: #0056b3;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.review-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.review-box {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f4f7fb;
+    text-align: center;
+    width: 100%;
+}
+
+.review-box a {
+    display: block;
+}
+
+.review-box img {
+    width: 80%;
+    max-width: 210px;
+    height: auto;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+    .avatar {
+        width: 130px;
+        height: 130px;
+    }
+    .contact a {
+        font-size: 14px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
