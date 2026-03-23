@@ -1,14 +1,7 @@
 /* Стили для CV карточки */
 
-@font-face {
-    font-family: 'CustomFont';
-    src: url('font_1.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
-    font-family: 'CustomFont', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -16,8 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('texture.png') repeat, linear-gradient(135deg, #f4f7fb, #dbe3ec);
-    background-size: 200px 200px, cover;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     color: #333;
 }
 
@@ -25,7 +17,7 @@ body {
     background: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
     text-align: center;
     width: 90%;
     max-width: 1200px;
@@ -37,7 +29,7 @@ body {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #0056b3;
+    box-shadow: 0 4px 15px rgba(0, 86, 179, 0.2);
 }
 
 h1 {
@@ -51,10 +43,16 @@ p {
     font-size: 16px;
 }
 
+.specialty {
+    margin-bottom: 10px;
+}
+
 .contact {
     margin-top: 15px;
     padding: 10px;
-    border: 2px solid #0056b3;
+    padding-top: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 86, 179, 0.25);
     border-radius: 10px;
     background-color: #e9f0fa;
 }
@@ -69,6 +67,28 @@ p {
     letter-spacing: 0.5px;
 }
 
+.clinic-logo-link {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.clinic-logo {
+    max-height: 80px;
+}
+
+.action-btn-container {
+    margin-top: 15px;
+}
+
+.contact a.btn-primary {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
 .review-links {
     display: flex;
     flex-direction: column;
@@ -78,7 +98,7 @@ p {
 
 .review-box {
     padding: 10px;
-    border: 2px solid #ddd;
+    border: 1px solid #eee;
     border-radius: 10px;
     background-color: #f4f7fb;
     text-align: center;
