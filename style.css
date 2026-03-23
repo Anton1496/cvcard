@@ -87,6 +87,12 @@ p {
     color: #ffffff;
     border-radius: 6px;
     font-weight: 600;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact a.btn-primary:hover {
+    background-color: #1d4ed8;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
 }
 
 .review-links {
